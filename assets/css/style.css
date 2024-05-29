@@ -2,21 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 /* ----- VARIABLES ----- */
-:root{
-    --body-color: rgb(250, 250, 250);
-    --color-white: rgb(255, 255, 255);
 
-    --text-color-second: rgb(68, 68, 68);
-    --text-color-third: rgb(30, 159, 171);
-
-    --first-color: rgb(110, 87, 224);
-    --first-color-hover: rgb(40, 91, 212);
-
-    --second-color: rgb(0, 201, 255);
-    --third-color: rgb(192, 166, 49);
-    --first-shadow-color: rgba(0, 0, 0, 0.1);
-
-}
 
 /* ----- BASE ----- */
 *{
@@ -64,8 +50,8 @@ html{
     margin-left: 10px;
 }
 .btn:hover{
-    background: var(--second-color);
-    color: var(--color-white);
+    background: rgb(0, 201, 255);
+    color: white;
 }
 
 /* ----- GLOBAL ICONS DESIGN ----- */
@@ -75,7 +61,7 @@ i{
 
 /* ------- BASE -------- */
 body{
-    background: var(--body-color);
+    background: rgb(250, 250, 250);
 }
 .container{
     width: 100%;
@@ -90,7 +76,7 @@ nav{
     width: 100%;
     height: 90px;
     line-height: 90px;
-    background: var(--body-color);
+    background:  rgb(250, 250, 250);
     padding-inline: 9vw;
     transition: .3s;
     z-index: 100;
@@ -101,14 +87,14 @@ nav{
 .nav-name{
     font-size: 30px;
     font-weight: 600;
-    color: var(--text-color-third);
+    color: rgb(30, 159, 171);
 }
 .nav-logo span{
     position: absolute;
     top: -15px;
     right: -20px;
     font-size: 5em;
-    color: var(--text-color-second);
+    color: rgb(68, 68, 68);
 }
 .nav-menu, .nav_menu_list{
     display: flex;
@@ -119,7 +105,7 @@ nav{
 }
 .nav-link{
     text-decoration: none;
-    color: var(--text-color-second);
+    color: rgb(68, 68, 68);
     font-weight: 500;
     padding-inline: 15px;
     margin-inline: 20px;
@@ -133,7 +119,7 @@ nav{
 }
 .active-link{
     position: relative;
-    color: var(--first-color);
+    color:  rgb(110, 87, 224);
     transition: .3;
 }
 .active-link::after{
@@ -144,7 +130,7 @@ nav{
     transform: translate(-50%, -50%);
     width: 5px;
     height: 5px;
-    background: var(--first-color);
+    background:  rgb(110, 87, 224);
     border-radius: 50%;
 }
 
@@ -174,8 +160,8 @@ nav{
     padding-left: 20px;
 }
 .featured-text-card span{
-    background: var(--third-color);
-    color: var(--color-white);
+    background:rgb(192, 166, 49);
+    color:  rgb(255, 255, 255);
     padding: 3px 8px;
     font-size: 12px;
     border-radius: 5px;
@@ -183,33 +169,34 @@ nav{
 .featured-name{
     font-size: 50px;
     font-weight: 600;
-    color: var(--text-color-second);
+    color: rgb(68, 68, 68);
     margin-block: 20px;
 }
 .typedText{
     text-transform: capitalize;
-    color: var(--text-color-third);
+    color: rgb(30, 159, 171);
 }
 .featured-text-info{
     font-size: 15px;
     margin-bottom: 30px;
-    color: var(--text-color-second);
+    color: rgb(68, 68, 68);
 }
 .featured-text-btn{
     display: flex;
     gap: 20px;
 }
 .featured-text-btn>.blue-btn{
-    background: var(--first-color);
-    color: var(--color-white);
+    background:  rgb(110, 87, 224);
+    color:  rgb(255, 255, 255);
 }
 .featured-text-btn>.blue-btn:hover{
-    background: var(--first-color-hover);
+    background: rgb(40, 91, 212);
 }
 .social_icons{
     display: flex;
     margin-top: 5em;
     gap: 30px;
+    padding-bottom: 50px;
 }
 .icon{
     display: flex;
@@ -222,7 +209,7 @@ nav{
     cursor: pointer;
 }
 .icon:hover{
-    color: var(black);
+    color: white;
     background-color: #00B5E7;
     transition: 0.2s ease-in;
 }
@@ -266,8 +253,8 @@ nav{
    height: 50px;
    gap: 5px;
    text-decoration: none;
-   color: var(--text-color-second);
-   background: var(--color-white);
+   color: rgb(68, 68, 68);
+   background:  rgb(255, 255, 255);
    border-radius: 30px;
    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
 }
@@ -297,7 +284,7 @@ nav{
 }
 .top-header h1{
     font-weight: 600;
-    color: var(--text-color-second);
+    color: rgb(68, 68, 68);
     margin-bottom: 10px;
 }
 .top-header span{
@@ -306,7 +293,7 @@ nav{
 h3{
     font-size: 20px;
     font-weight: 600;
-    color: var(--text-color-second);
+    color: rgb(68, 68, 68);
     margin-bottom: 15px;
 }
 
@@ -319,8 +306,8 @@ h3{
     padding-block: 30px 70px;
     padding-inline: 20px;
     width: 100%;
-    background: var(--color-white);
-    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+    background:  rgb(255, 255, 255);
+    box-shadow: 1px 8px 10px 2px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     gap: 20px;
 }
@@ -333,12 +320,12 @@ h3{
     position: absolute;
     right: 20px;
     bottom: 20px;
-    background: var(--first-color);
-    color: var(--color-white);
+    background:  rgb(110, 87, 224);
+    color:  rgb(255, 255, 255);
     border-radius: 30px;
 }
 .about-btn button:hover{
-    background: var(--first-color-hover);
+    background: rgb(40, 91, 212);
 }
 
 /* ----- ABOUT / SKILLS BOX ----- */
@@ -355,8 +342,8 @@ h3{
 }
 .skills-list span{
     font-size: 14px;
-    background: var(--first-color);
-    color: var(--color-white);
+    background:  rgb(110, 87, 224);
+    color:  rgb(255, 255, 255);
     padding: 2px 10px;
     border-radius: 5px;
 }
@@ -377,9 +364,9 @@ h3{
     flex-direction: column;
     width: 30%;
     height: 250px;
-    background: var(--color-white);
+    background:  rgb(255, 255, 255);
     border-radius: 20px;
-    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+    box-shadow: 1px 8px 10px 2px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
 .project-box>i{
@@ -395,7 +382,7 @@ h3{
     content: "";
     position: absolute;
     bottom: -100%;
-    background: var(--second-color);
+    background: rgb(0, 201, 255);
     width: 100%;
     height: 100%;
     transition: .4s;
@@ -408,7 +395,7 @@ h3{
 .project-box:hover.project-box i,
 .project-box:hover.project-box>h3,
 .project-box:hover.project-box>label{
-    color: var(--color-white);
+    color:  rgb(255, 255, 255);
     z-index: 2;
 }
 
@@ -422,27 +409,27 @@ h3{
     padding: 20px 30px;
     width: 100%;
     height: 315px;
-    background: var(--second-color);
+    background: rgb(0, 201, 255);
     border-radius: 10px;
-    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+    box-shadow: 1px 8px 10px 2px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
 .contact-info>h2{
-    color: var(--color-white);
+    color:  rgb(255, 255, 255);
     margin-bottom: 20px;
 }
 .contact-info>p{
     display: flex;
     align-items: center;
     gap: 10px;
-    color: var(--color-white);
+    color:  rgb(255, 255, 255);
     margin-block: 5px;
 }
 .contact-info p>i{
     font-size: 18px;
 }
 .contact-info::after{
-    background: var(--color-white);
+    background:  rgb(255, 255, 255);
 }
 .contact-info:hover.contact-info h2,
 .contact-info:hover.contact-info p,
@@ -486,8 +473,8 @@ textarea{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--second-color);
-    color: var(--color-white);
+    background: rgb(0, 201, 255);
+    color:  rgb(255, 255, 255);
 }
 .form-button>.btn:hover{
     background: #00B5E7;
@@ -516,12 +503,22 @@ footer{
 }
 .footer_menu_list{
     list-style: none;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: transparent;
 }
 .footer_menu_list a{
     text-decoration: none;
-    color: var(--text-color-second);
+    color: rgb(68, 68, 68);
     font-weight: 500;
     margin-inline: 20px;
+}
+.footer_menu_list:hover{
+    background-color: #00B5E7;
+    border-radius: 20px;
+    padding: 5px;
+    transition: 0.2s ease-in;
+    color: white;
 }
 .footer-social-icons{
     display: flex;
@@ -638,4 +635,7 @@ footer{
     .input-field{
         width: 100%;
     }
-}
+    .middle-footer .footer-menu{
+        font-size: 0.7rem;
+    }
+        }
